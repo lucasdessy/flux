@@ -26,15 +26,15 @@ class HomePageView extends GetView<HomePageController> {
                 child: ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: snapshot.data.docs.length,
+                  itemCount: snapshot.data!.docs.length,
                   itemBuilder: (ctx, index) {
-                    final snap = snapshot.data.docs[index];
+                    final snap = snapshot.data!.docs[index];
                     return Padding(
                       padding:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                       child: Card(
                         child: ListTile(
-                          title: Text('${snap.data()['title']}'),
+                          title: Text('${snap.data()!['title']}'),
                           subtitle: Text('documentId: ${snap.id}'),
                         ),
                       ),
