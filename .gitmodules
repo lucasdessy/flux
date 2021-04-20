@@ -1,3 +1,6 @@
 [submodule "flux-hardware"]
 	path = flux-hardware
 	url = https://github.com/hellstrike12/flux-hardware.git
+[submodule "flux-software"]
+	path = flux-software
+	url = https://github.com/lucasdessy/flux-software
